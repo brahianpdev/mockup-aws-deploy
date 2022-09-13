@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node:
+    image: node:latest
+    container_name: node
+    build: ./
+    ports:
+      - "7777:7777"
+    volumes:
+      - ./:/app
